@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assign08.css">
+    <link rel="stylesheet" href="assign08_gallary.css">
+    <script src="assign08.js"></script>
+    <title>Gallary</title>
+</head>
+<body>
+    
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="my logo">
+        </div>
+        <nav>
+            <a class="active" href="assign08-1.html">Home</a>
+            <a href="assign08-2.html">Gallary</a>
+            <a href="assign08.html">Shop</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+
+    
+    <div class="main">
+        <h1>Photo Gallary</h1>
+        <div class="main_gallery">
+            <div class="picture">
+                <img src="images/deer-min.jpg" alt="a yound buck" onclick="openModal();currentSlide(1)">
+            </div>
+            <div class="picture">
+                <img src="images/image1-min.jpg" alt="waterfall" onclick="openModal();currentSlide(2)">
+            </div>
+            <div class="picture">
+                <img src="images/image4-min.jpg" alt="butterfly" onclick="openModal();currentSlide(3)">
+            </div>
+            <div class="picture">
+                <img src="images/image12-min.jpg" alt="sunset" onclick="openModal();currentSlide(4)">
+            </div>
+            <div class="picture">
+                <img src="images/Lundbreck_Falls-min.jpg" alt="Lundbreck Falls" onclick="openModal();currentSlide(5)">
+            </div>
+            <div class="picture">
+                <img src="images/image5-min.jpg" alt="lightning" onclick="openModal();currentSlide(6)">
+            </div>
+            <div class="picture">
+                <img src="images/image6-min.jpg" alt="Waterton Lake" onclick="openModal();currentSlide(7)">
+            </div>
+            <div class="picture">
+                <img src="images/image8-min.JPG" alt="Lethbride Bridge" onclick="openModal();currentSlide(8)">
+            </div>
+            <div class="picture">
+                <img src="images/image9-min.jpg" alt="Flower" onclick="openModal();currentSlide(9)">
+            </div>
+            <div class="picture">
+                <img src="images/image10-min.jpg" alt="river" onclick="openModal();currentSlide(10)">
+            </div>
+            <div class="picture">
+                <img src="images/image11-min.JPG" alt="yound deer" onclick="openModal();currentSlide(11)">
+            </div>
+            <div class="picture">
+                <img src="images/cameron_falls-min.jpg" alt="Cameron Falls" onclick="openModal();currentSlide(12)">
+            </div>
+            <div class="picture">
+                <img src="images/image13-min.jpg" alt="Pot Hole Creet Trail" onclick="openModal();currentSlide(13)">
+            </div>
+            <div class="picture">
+                <img src="images/image14-min.JPG" alt="Family of deer" onclick="openModal();currentSlide(14)">
+            </div>
+            <div class="picture">
+                <img src="images/image2-min.jpg" alt="grain bins at night" onclick="openModal();currentSlide(15)">
+            </div>
+            <div class="picture">
+                <img src="images/image3-min.jpg" alt="commet Neowise" onclick="openModal();currentSlide(16)">
+            </div>
+            <div class="picture">
+                <img src="images/n2-min.jpg" alt="The Big Dipper" onclick="openModal();currentSlide(17)">
+            </div>
+            <div class="picture">
+                <img src="images/n3-min.jpg" alt="nightscape with sattalite" onclick="openModal();currentSlide(18)">
+            </div>
+            <div class="picture">
+                <img src="images/moon-min.jpg" alt="the moon" onclick="openModal();currentSlide(19)">
+            </div>
+            <div class="picture">
+                <img src="images/n4-min.jpg" alt="milkyway" onclick="openModal();currentSlide(20)">
+            </div>
+            <div class="picture">
+                <img src="images/n5-min.jpg" alt="Comet Neowise with passing car" onclick="openModal();currentSlide(21)">
+            </div>
+            <div class="picture">
+                <img src="images/n1-min.JPG" alt="grain bins at night front veiw" onclick="openModal();currentSlide(23)">
+            </div>
+        </div> <!--End of Photos gallary-->
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 23</div>
+            <img src="fullimg/deer.jpg" alt="a yound buck">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 23</div>
+            <img src="fullimg/image1.jpg" alt="waterfall">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 23</div>
+            <img src="fullimg/image4.jpg"  alt="butterfly">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 23</div>
+            <img src="fullimg/image12.jpg" alt="sunset">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 23</div>
+            <img src="fullimg/Lundbreck_Falls.jpg" alt="Lundbreck Falls">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 23</div>
+            <img src="fullimg/image5.jpg" alt="lightning">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 23</div>
+            <img src="fullimg/image6.jpg" alt="Waterton Lake">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 23</div>
+            <img src="fullimg/image7.jpg" alt="Waterton Lake">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">9 / 23</div>
+            <img src="fullimg/image8.JPG" alt="Lethbride Bridge">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">10 / 23</div>
+            <img src="fullimg/image9.jpg" alt="Flower">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">11 / 23</div>
+            <img src="fullimg/image10.jpg" alt="river">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">12 / 23</div>
+            <img src="fullimg/image11.jpg" alt="yound deer">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">13 / 23</div>
+            <img src="fullimg/cameron_falls.jpg" alt="yound deer">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">14 / 23</div>
+            <img src="fullimg/image13.jpg" alt="Cameron Falls">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">15 / 23</div>
+            <img src="fullimg/image14.jpg" alt="Pot Hole Creet Trail">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">16 / 23</div>
+            <img src="fullimg/image2.jpg" alt="Family of deer">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">17 / 23</div>
+            <img src="fullimg/image3.jpg" alt="grain bins at night">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">18 / 23</div>
+            <img src="fullimg/n2.jpg" alt="commet Neowise">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">19 / 23</div>
+            <img src="fullimg/n3.jpg" alt="The Big Dipper">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">20 / 23</div>
+            <img src="fullimg/moon.jpg" alt="nightscape with sattalite">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">21 / 23</div>
+            <img src="fullimg/n4.jpg" alt="the moon">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">22 / 23</div>
+            <img src="fullimg/n5.jpg"  alt="milkyway">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">23 / 23</div>
+            <img src="fullimg/n1.JPG" alt="Comet Neowise with passing car">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      </div>
+    </div>
+
+    <footer>
+        <div id="contact">
+            Cameron Gualco<br>
+            Magrath Alberta<br>
+            <a href="mailto:cameron.g.photo@gmail.com">cameron.g.photo@gmail.com</a><br>
+            (587)-821-2462<br>
+            <hr>
+            Find Me On:<br>
+            <a href="https://www.facebook.com/CameronGualcoPhotography" target="_blank">Facebook</a> and
+            <a href="https://www.instagram.com/cameron_gualco_photography/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>

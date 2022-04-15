@@ -1,0 +1,176 @@
+.shop_gallery{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.picture img{
+    display: block;
+    max-width: 400px;
+    height: auto;
+    margin: 20px; 
+}
+
+.picture {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.picture .middle {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    opacity: 0;
+}
+
+.picture .name {
+    font-size: 1.5rem;
+}
+
+.purchase {
+    border: 2px solid white;
+    background-color: rgba(175, 175, 175, 0.6);
+    color: white;
+    padding: 15px 32px;
+    margin-top: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.purchase:hover {
+    border: 2px solid green;
+}
+
+.picture:hover .middle {
+    opacity: 1;
+}
+
+/* Purchase Form Style */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 30px;
+}
+
+.form-container h1 {
+    grid-column: 1 / -1;
+}
+
+.form-container #checkbox {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+.form-container #contact_ingo {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+
+.form-container #payment {
+    grid-column: 2 / -1;
+    grid-row: 3;
+}
+
+.form-container #button {
+    grid-column: 1 / -1;
+    grid-row: 4;
+}
+
+
+.form-container input[type=text], textarea {
+    width: 95%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: lightgray;
+}
+
+.form-container input[type=text]:focus, textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-size: 1.2rem;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .reset {
+    background-color: lightgreen;
+}
+
+.form-container .btn:hover {
+    opacity: 1;
+}
+
+#checkbox {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+}
+
+/* Payment Style */
+#payment {
+    margin-top: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
+
+@media only screen and (min-width: 900px) {
+    .shop_gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .picture img {
+        max-width: 400px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .picture img {
+        max-width: 500px;
+        height: auto;
+    }
+}
+

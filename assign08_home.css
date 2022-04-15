@@ -1,0 +1,60 @@
+.home_gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1;
+}
+
+.picture img{
+    box-shadow: 10px 5px midnightblue;
+    max-width: 200px;
+    height: auto;
+    margin: 20px;  
+}
+#quote{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Brush Script MT', 'Brush Script Std', cursive;
+    color: teal;
+    border: 8px inset grey;
+    margin: 100px;
+    grid-row: 3;
+}
+.about{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 55px;
+}
+
+#info{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    margin: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    .home_gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .picture img {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main{
+        grid-template-columns: 1fr 3fr;
+    }
+    .home_gallery{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: none;;
+    }
+}
